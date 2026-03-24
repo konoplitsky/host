@@ -24,7 +24,18 @@ export default createModuleFederationConfig({
   },
   shareStrategy: 'version-first',
   dts: {
-    generateTypes: true
+    consumeTypes: {
+      remoteTypeUrls: async () => ({
+        remote: {
+          zip: isDev
+              ? 'http://localhost:3001/@mf-types.zip'
+              : 'https://remote-cw7z-cetg2m268-axius-projects.vercel.app/@mf-types.zip',
+          api: isDev
+              ? 'http://localhost:3001/@mf-types.zip'
+              : 'https://remote-cw7z-cetg2m268-axius-projects.vercel.app/@mf-types.zip'
+        }
+      })
+    }
   },
   bridge: {
     enableBridgeRouter: true
