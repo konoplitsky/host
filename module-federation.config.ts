@@ -23,20 +23,7 @@ export default createModuleFederationConfig({
     '@happycode-core/counter-store': { singleton: true }
   },
   shareStrategy: 'version-first',
-  // dts: {
-  //   consumeTypes: {
-  //     remoteTypeUrls: async () => ({
-  //       remote: {
-  //         zip: isDev
-  //             ? 'http://localhost:3001/@mf-types.zip'
-  //             : 'https://remote-cw7z-cetg2m268-axius-projects.vercel.app/@mf-types.zip',
-  //         api: isDev
-  //             ? 'http://localhost:3001/@mf-types.zip'
-  //             : 'https://remote-cw7z-cetg2m268-axius-projects.vercel.app/@mf-types.zip'
-  //       }
-  //     })
-  //   }
-  // },
+  dts: false,
   bridge: {
     enableBridgeRouter: true
   }
