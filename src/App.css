@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  color: #e5e7eb;
+  background: #0f172a;
+}
+
+.mf-host-page {
+  min-height: 100vh;
+  padding: 24px;
+  display: grid;
+  gap: 16px;
+  align-content: start;
+}
+
+.mf-host-card {
+  border: 1px solid #334155;
+  border-radius: 12px;
+  background: #111827;
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  max-width: 560px;
+}
+
+.mf-host-title {
+  margin: 0;
+  font-size: 24px;
+  color: #f8fafc;
+}
+
+.mf-host-link {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+.mf-host-link:hover {
+  text-decoration: underline;
+}
+
+.mf-host-counter {
+  font-size: 16px;
+}
+
+.mf-host-button {
+  width: 44px;
+  height: 36px;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  color: #f8fafc;
+  background: #1e293b;
+  cursor: pointer;
+}
+
+.mf-host-button:hover {
+  background: #334155;
+}
+
+.mf-remote-slot {
+  max-width: 560px;
+}
