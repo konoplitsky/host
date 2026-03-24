@@ -1,7 +1,7 @@
 import './App.css';
 import { Link } from 'react-router-dom';
 import useStore from '@happycode-core/counter-store';
-import { ContactsPage } from './shared/ui/remoteComponents/ContactsPage.tsx';
+// import { ContactsPage } from './shared/ui/remoteComponents/ContactsPage.tsx';
 
 const App = () => {
   const { count, increment } = useStore();
@@ -20,7 +20,8 @@ const App = () => {
       </section>
 
       <section className='mf-remote-slot'>
-        <ContactsPage />
+        {/*<ContactsPage />*/}
+          Contacts page
       </section>
     </div>
   );

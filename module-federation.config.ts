@@ -7,7 +7,7 @@ export default createModuleFederationConfig({
     remote: isDev
       ? `remote@${process.env.MANIFEST_REMOTE_LOCAL}`
       : `remote@${process.env.MANIFEST_REMOTE_PROD}`,
-    remote2: 'remote2@http://localhost:3002/mf-manifest.json'
+    // remote2: 'remote2@http://localhost:3002/mf-manifest.json'
   },
   shared: {
     react: {
