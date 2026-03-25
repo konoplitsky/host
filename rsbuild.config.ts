@@ -7,5 +7,8 @@ export default defineConfig({
   plugins: [pluginReact(), pluginModuleFederation(moduleFederationConfig)],
   server: {
     port: 3000
+  },
+  output: {
+    assetPrefix: process.env.REMOTE_PUBLIC_PATH ?? '/'
   }
 });
