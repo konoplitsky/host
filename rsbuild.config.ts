@@ -9,6 +9,6 @@ export default defineConfig({
     port: 3000
   },
   output: {
-    assetPrefix: process.env.REMOTE_PUBLIC_PATH ?? '/'
+    assetPrefix: process.env.HOST_PUBLIC_PATH ?? '/'
   }
 });
