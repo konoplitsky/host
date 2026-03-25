@@ -5,9 +5,8 @@ export default createModuleFederationConfig({
   name: 'host',
   remotes: {
     remote: isDev
-      ? `remote@${process.env.MANIFEST_REMOTE_LOCAL}`
-      : `remote@${process.env.MANIFEST_REMOTE_PROD}`,
-    // remote2: 'remote2@http://localhost:3002/mf-manifest.json'
+      ? `remote@http://localhost:3001/mf-manifest.json`
+      : `remote@https://remote-cw7z.vercel.app/mf-manifest.json`,
   },
   shared: {
     react: {
