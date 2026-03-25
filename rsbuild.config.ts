@@ -9,6 +9,6 @@ export default defineConfig({
     port: 3000
   },
   output: {
-    assetPrefix: 'https://host-amber-seven.vercel.app/'
+    assetPrefix: "auto"
   }
 });
