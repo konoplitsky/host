@@ -8,7 +8,7 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
-    path: '/remote',
+    path: '/remote/*',
     element: <AboutApp />
   }
 ]);
